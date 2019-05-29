@@ -1,9 +1,427 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url("components/buttons.css");
+@import url("components/variables.css");
 
-@import url('variables.css');
-@import url('base.css');
 
-@import url('components/flex-grid.css');
-@import url('components/buttons.css');
-@import url('components/forms.css');
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
 
+body {
+    display: block;
+}
+
+/* navigatie */
+nav ul {
+    display: flex;
+    padding-top: 5px;
+}
+
+nav ul li {
+    list-style: none;
+    padding-right: 14px;
+    padding-top: 10px;
+}
+
+nav ul li a {
+    color: var(--color-white);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+nav ul li a:hover {
+    color: var(--color-base);
+}
+
+.my_nav .social_media ul {
+    margin: 0;
+    padding: 0 27px 0 0;
+}
+
+nav ul li #hamburger_icon {
+    display: none;
+}
+
+/* icon display inline */
+/* icon display none */
+
+@media only screen and (max-width: 420px) {
+    nav ul li #hamburger_icon {
+        display: inline;
+    }
+
+    nav ul li a {
+        display: none;
+        padding-top: 0;
+    }
+
+    .my_nav .social_media ul {
+        display: none;
+    }
+}
+
+/* social media */
+.social_media li {
+    list-style: none;
+    padding-bottom: 2px;
+}
+
+.social_media li a {
+    color: var(--color-base);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social_media i:hover {
+    color: var(--color-white);
+    transition: 0s;
+}
+
+/* header */
+.my_header {
+    background-image: url("../images/alice-pasqual-758558-unsplash_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding-bottom: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+    .my_header {
+        background-image: url("../images/alice-pasqual-758558-unsplash_2_mobile.jpg");
+    }
+}
+
+.my_header img {
+    width: 70%;
+    height: 70%;
+}
+
+.my_header h3 {
+    color: var(--color-white);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration-line: overline;
+    text-align: center;
+    text-shadow: 2px 0px 3px black;
+}
+
+.my_header h1 {
+    color: var(--color-base);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 31px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+    margin-top: 28px;
+    padding-bottom: 20px;
+}
+
+.my_header_2 {
+    padding-top: 70px;
+    align-items: center;
+}
+
+.rubriek_title_header {
+    color: var(--color-base);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-align: center;
+    /* text-shadow: 1px 1px 1px #303546; */
+}
+
+/* main */
+.my_main {
+    background-color: var(--color-bg-dark);
+}
+
+.my_main:first-child {
+    padding-left: 8%;
+}
+
+.my_main h1 {
+    color: var(--color-base);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 31px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.rubriek_title {
+    color: var(--color-white);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.my_main p {
+    color: var(--color-white);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+/* my_aside */
+.my_aside_1 {
+    height: 300px;
+    background-image: url("../images/nicolas-j-leclercq-743353-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-bottom: 5px solid var(--color-white);
+}
+
+.my_aside_2 {
+    height: 230px;
+    background-image: url("../images/christine-siracusa-363257-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-right: 5px solid var(--color-white);
+}
+
+.my_aside_3 {
+    height: 230px;
+    background-image: url("../images/henry-fournier-68573-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* my_section_text*/
+.my_section_text {
+    background-color: var(--color-bg-dark);
+    padding: 10px;
+}
+
+.my_section_text h2 {
+    color: var(--color-base);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+}
+
+@media only screen and (min-width: 767px) {
+    .my_section_text h2 {
+        text-align: left;
+        padding-left: 7.4%;
+        margin-top: -60px;
+        padding-bottom: 30px;
+    }
+}
+
+
+/* my_section*/
+.fas {
+    color: var(--color-white);
+    font-size: 20px;
+}
+
+.my_section_gallery {
+    height: 500px;
+}
+
+.my_section_gallery_1,
+.my_section_gallery_3 {
+    background-color: var(--color-bg-dark);
+    justify-content: space-evenly;
+}
+
+.my_section_gallery_2 {
+    background-image: url("../images/jesson-mata-1137287-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+}
+
+
+
+/* section_quotes */
+p.p_quote {
+    color: var(--color-white);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0, 7px;
+    font-size: 17px;
+    line-height: 1.3;
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.p_quote_name {
+    font-style: normal;
+    font-size: 12px;
+}
+
+.my_section_quotes_1 {
+    background-color: var(--color-base);
+}
+
+.my_section_quotes_2 {
+    background-color: var(--color-bg-medium);
+}
+
+.my_section_quotes_3 {
+    background-color: var(--color-bg-light);
+}
+
+.my_section_quotes_4 {
+    height: 300px;
+    background-image: url("../images/adam-jaime-119565-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* footer */
+.my_footer {
+    background-color: var(--color-white);
+    margin-top: 10px;
+    padding: 0 30px;
+}
+
+.my_footer h1 {
+    color: var(--color-base);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-top: 28px;
+    padding: 0 10px;
+}
+
+.my_footer ul {
+    padding: 0 10px;
+}
+
+.my_footer ul.align_right {
+    text-align: end;
+}
+
+.my_footer li {
+    list-style: none;
+}
+
+.my_footer li.contact {
+    color: var(--color-base);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding-bottom: 9px;
+}
+
+.footer_cookies {
+    align-self: flex-end;
+}
+
+.footer_cookies li {
+    text-align: right;
+}
+
+.footer_cookies ul li a {
+    color: var(--color-bg-medium);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 10.5px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.my_footer .menu {
+    color: var(--color-base);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-top: 28px;
+    text-align: right;
+}
+
+.my_footer li a {
+    color: var(--color-bg-medium);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.my_footer li a:hover {
+    color: var(--color-base);
+}
+
+/* footer social media */
+.footer_social_media {
+    padding-left: 10px;
+}
+
+.footer_social_media li {
+    list-style: none;
+    padding-right: 10px;
+}
+
+.footer_social_media li a {
+    color: var(--color-base);
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.footer_social_media li:hover {
+    color: var(--color-bg-medium);
+    transition: 0s;
+}
+
+@media only screen and (max-width: 420px) {
+    .my_footer li.contact {
+        text-align: center;
+    }
+
+    .my_footer h1 {
+        text-align: center;
+    }
+
+    .footer_social_media {
+        justify-content: center;
+    }
+
+    .footer_social_media li {
+        justify-content: space-between;
+        padding: 0 5px;
+    }
+
+    .my_footer ul li a {
+        display: none;
+    }
+
+    .my_footer .menu {
+        display: none;
+    }
+}

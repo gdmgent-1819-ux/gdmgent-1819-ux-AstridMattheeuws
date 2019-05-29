@@ -1,0 +1,62 @@
+/* button header */
+.button_menu_header {
+    display: block;
+    height: 35px;
+    width: 170px;
+    background: var(--color-base);
+    color: var(--color-white);
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid var(--color-base);
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.button_menu_header:hover {
+    color: var(--color-bg-dark-image);
+}
+
+
+/* buttons main */
+.button_menu {
+    display: block;
+    height: 35px;
+    width: 170px;
+    background: var(--color-base);
+    color: var(--color-white);
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid var(--color-base);
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.button_reserveren {
+    display: block;
+    height: 35px;
+    width: 170px;
+    background: var(--color-white);
+    color: var(--color-base);
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid var(--color-white);
+    margin-bottom: 45px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+
+.button_menu:hover {
+    color: var(--color-bg-dark-image);
+}
+
+.button_reserveren:hover {
+    color: var(--color-bg-dark-image);
+}

@@ -1,21 +1,615 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Styleguide</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components/bootstrap-4.3.1/dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styleguide.css">
+    <title>PUNCH FOOD, styleguide.</title>
 </head>
+
 <body>
-<div class="container">
-    <h1 class="sg-title">Digital styleguide</h1>
-    <h2 class="sg-subtitle">Kleuren</h2>
-    <h2 class="sg-subtitle">Typografie</h2>
-    <h2 class="sg-subtitle">Knopppen</h2>
-    <h2 class="sg-subtitle">Formulier</h2>
-    <h2 class="sg-subtitle">Componenten</h2>
-</div>
+
+    <div class="container my_container">
+
+        <header class="row my_header">
+            <div class="col-md-5 col-xs-6 d-flex justify-content-start align-items-start my_header_logo">
+                <img src="assets/images/logo_PunchFood.svg" alt="logo_PunchFood">
+            </div>
+            <div class="col-md-7 col-xs-6">
+                <nav class="d-flex justify-content-end">
+                    <ul>
+                        <li><a href="#atoms">atoms</a></li>
+                        <li><a href="#molecules">molecules</a></li>
+                        <li><a href="#organisms">organisms</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="row my_main">
+            <div class="col-md-12 col-xs-12">
+
+                <div class="row atoms" id="atoms">
+                    <div class="col-md-12 col-xs-12 header_atoms">
+                        <h1 class="subtitle">atoms</h1>
+                    </div>
+                </div>
+
+                <div class="row logo">
+                    <div class="col-md-12 col-xs-12 title_atoms">
+                        <h1 class="subtitle">logo</h1>
+                    </div>
+                    <div class="col-md-12 col-xs-12">
+                        <div class="d-flex justify-content-start container_cards_logo">
+                            <div class="card_logo">
+                                <div class="d-flex justify-content-center align-items-center card_logo_top_1">
+                                    <img src="assets/images/logo_PunchFood_pos.svg" alt="logo_PunchFood">
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center card_logo_content">
+                                    <p class="logo_pos"> HEX #303546<br>logo positive</p>
+                                </div>
+                            </div>
+                            <div class="card_logo">
+                                <div class="d-flex justify-content-center align-items-center card_logo_top_2">
+                                    <img src="assets/images/logo_PunchFood.svg" alt="logo_PunchFood">
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center card_logo_content">
+                                    <p class="logo_pos"> HEX #FFFFFF<br>logo negative</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row colors">
+                    <div class="col-md-12 col-xs-12 title_atoms">
+                        <h1 class="subtitle">colors</h1>
+                    </div>
+                    <div class="col-md-12 col-xs-12">
+                        <div class="d-flex justify-content-start container_cards">
+                            <div class="card">
+                                <div class="card_top_1"></div>
+                                <div class="card_content">
+                                    <p class="color_code"> HEX #6A87E0<br>RGB 106, 135, 224<br><span
+                                            class="color_code_baseline">base color</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card_top_2"></div>
+                                <div class="card_content">
+                                    <p class="color_code"> HEX #303546<br>RGB 48, 53, 70<br><span
+                                            class="color_code_baseline">color-bg-dark</span></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card_top_3"></div>
+                                <div class="card_content">
+                                    <p class="color_code"> HEX #4C5C80<br>RGB 76, 92, 128<br><span
+                                            class="color_code_baseline">color-bg-medium</span></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card_top_4"></div>
+                                <div class="card_content">
+                                    <p class="color_code"> HEX #808DAF<br>RGB 128, 141, 175<br><span
+                                            class="color_code_baseline">color-bg-light</span></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card_top_5"></div>
+                                <div class="card_content">
+                                    <p class="color_code"> HEX #FFFFFF<br>RGB 255, 255, 255<br><span
+                                            class="color_code_baseline">color-white</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="row typography">
+                    <div class="col-md-12 col-xs-12 title_atoms">
+                        <h1 class="subtitle">typography</h1>
+                    </div>
+
+                    <div class="col-md-12 col-xs-12 typography">
+                        <div class="typography_kader">
+                            <p class="typography_OpenSans">FONT FAMILY:<br>'Open Sans', sans-serif</p>
+                            <ul>
+                                <li class="OpenSans_bold">light <span class="OpenSans_regular">– 'Open Sans',
+                                        sans-serif, 300</span></li>
+                                <li class="OpenSans_bold">light italic <span class="OpenSans_regular">– 'Open Sans',
+                                        sans-serif, 300i</span></li>
+                                <li class="OpenSans_bold">normal <span class="OpenSans_regular">– 'Open Sans',
+                                        sans-serif, 400</span></li>
+                                <li class="OpenSans_bold">italic <span class="OpenSans_regular">– 'Open Sans',
+                                        sans-serif, 400i</span></li>
+                                <li class="OpenSans_bold">bold <span class="OpenSans_regular">– 'Open Sans', sans-serif,
+                                        600</span></li>
+                            </ul>
+                        </div>
+                        <p class="typography_Foods">FOODS</p>
+                        <ul>
+                            <li>font-family: 'Open Sans', sans-serif;</li>
+                            <li>font-weight: 600;</li>
+                            <li>font-size: 14px;</li>
+                            <li>letter-spacing: 1px;</li>
+                            <li> text-transform: uppercase;</li>
+                        </ul>
+                        <p class="typography_PunchFood">PUNCH FOOD</p>
+                        <ul>
+                            <li>font-family: 'Open Sans', sans-serif;</li>
+                            <li>font-weight: 600;</li>
+                            <li>font-size: 28px;</li>
+                            <li>letter-spacing: 2px;</li>
+                            <li> text-transform: uppercase;</li>
+                        </ul>
+                        <p class="typography_SmaakVibesSfeer">Met smaak, good vibes,<br>ongedwongen sfeer</p>
+                        <ul>
+                            <li>font-family: 'Open Sans', sans-serif;</li>
+                            <li>font-weight: 600;</li>
+                            <li>font-size: 21px;</li>
+                            <li>letter-spacing: 1.5px;</li>
+                            <li>text-transform: uppercase;</li>
+                            <li>line-height: 1.1;</li>
+                        </ul>
+                        <p class="typography_text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived of Lorem
+                            Ipsum.</p>
+                        <ul>
+                            <li>font-family: 'Open Sans', sans-serif;</li>
+                            <li>font-weight: 400;</li>
+                            <li>font-size: 16px;</li>
+                            <li>letter-spacing: 2px;</li>
+                            <li>line-height: 1.5;</li>
+                        </ul>
+                        <p class="typography_quotes">"QUOTES: is simply dummy text of the printing and typesetting
+                            industry!"</p>
+                        <ul>
+                            <li>font-family: 'Open Sans', sans-serif;</li>
+                            <li>font-weight: 300;</li>
+                            <li>font-size: 17px;</li>
+                            <li>letter-spacing: 0,7px;</li>
+                            <li>line-height: 1.3;</li>
+                        </ul>
+                        <p class="typography_quotes_identity">- Christian (Prague) -</p>
+                        <ul>
+                            <li>font-family: 'Open Sans', sans-serif;</li>
+                            <li>font-weight: 300;</li>
+                            <li>font-size: 12px;</li>
+                            <li>letter-spacing: 0,7px;</li>
+                            <li>line-height: 1.3;</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="row icons">
+                    <div class="col-md-12 col-xs-12 title_atoms">
+                        <h1 class="subtitle">icons</h1>
+                    </div>
+
+                    <div class="col-md-12 col-xs-12">
+                        <div class="d-flex justify-content-start icons">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fas fa-chevron-left"></i></a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right"></i></a></li>
+                                <li><a href="#"><i class="fas fa-bars"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row icons_iframe">
+                    <div class="col-md-8 col-xs-12">
+                        <iframe width="100%" height="150"
+                            src="https://jsfiddle.net/astridmattheeuws/4r32onwz/embedded/html,css/"
+                            allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                    </div>
+                </div>
+
+                <div class="row buttons">
+                    <div class="col-md-12 col-xs-12 title_atoms">
+                        <h1 class="subtitle">buttons</h1>
+                    </div>
+                    <div class="col-md-12 col-xs-12 buttons">
+                        <div class="d-flex justify-content-start button_row1">
+                            <button class="button_menu">menu</button>
+                        </div>
+                        <div class="d-flex justify-content-start button_row2">
+                            <button class="button_reservation_1">reservation</button>
+                            <button class="button_reservation_2">reservation</button>
+                        </div>
+                        <div class="d-flex justify-content-start button_row3">
+                            <button class="button_plus">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row buttons_iframe">
+                    <div class="col-md-8 col-xs-12">
+                        <iframe width="100%" height="135"
+                            src="https://jsfiddle.net/astridmattheeuws/o4kqvu7y/7/embedded/html,css/"
+                            allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                    </div>
+                </div>
+
+                <div class="row grid">
+                    <div class="col-md-12 col-xs-12">
+
+                        <div class="row organisms" id="molecules">
+                            <div class="col-md-12 col-xs-12 header_molecules">
+                                <h1 class="subtitle">molecules</h1>
+                            </div>
+                        </div>
+
+                        <div class="row navigation">
+                            <div class="col-md-12 col-xs-12 title_atoms_navigation">
+                                <h1 class="subtitle">navigation</h1>
+                            </div>
+
+                            <div class="col-md-12 col-xs-12 my_nav">
+                                <nav class="d-flex justify-content-end">
+                                    <ul>
+                                        <li><a id="padding_food" href="#food">foods</a></li>
+                                        <li><a href="#">menu</a></li>
+                                        <li><a href="#">drinks</a></li>
+                                        <li><a href="#">reservation</a></li>
+                                        <li><a href="#">gift card</a></li>
+                                        <li><a href="#">contact</a></li>
+                                        <li><a href="#">nl/fr</a></li>
+                                        <li><a id="hamburger_icon" href="#"><i class="fas fa-bars"></i></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="row buttons_iframe">
+                            <div class="col-md-8 col-xs-12">
+                                <iframe width="100%" height="300"
+                                    src="https://jsfiddle.net/astridmattheeuws/sh4v7wf2/1/embedded/html,css/"
+                                    allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                            </div>
+                        </div>
+
+                        <div class="row media_blocks">
+                            <div class="col-md-12 col-xs-12 title_molecules_MediaBlocks">
+                                <h1 class="subtitle">media block 1</h1>
+                            </div>
+
+                            <div class="col-lg-12 col-xs-12 my_header_2">
+                                <div class="d-flex justify-content-center">
+                                    <img src="assets/images/logo_PunchFood.svg" alt="logo_PunchFood">
+                                </div>
+                                <h3 class="header_foodbar">foodbar</h3>
+                                <h1 class="header_creative">creative / surprising<br><span
+                                        class="rubriek_title_header">foods and drinks</span></h1>
+                                <div class="d-flex justify-content-center">
+                                    <button class="button_menu_header">reservation</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row buttons_iframe">
+                            <div class="col-md-8 col-xs-12">
+                                <iframe width="100%" height="270"
+                                    src="https://jsfiddle.net/astridmattheeuws/5926xwo1/1/embedded/html,css/"
+                                    allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                            </div>
+                        </div>
+
+                        <div class="row media_blocks">
+                            <div class="col-md-12 col-xs-12 title_molecules_MediaBlocks">
+                                <h1 class="subtitle">media block 2</h1>
+                            </div>
+
+                            <div class="col-lg-12 col-xs-12 my_header_3">
+                                <div class="col-md-6 col-xs-12 my_header_3_A">
+                                    <h1 class="typography_PunchFood_media_block"><span
+                                            class="typography_Foods_media_block">FOODS</span><br>PUNCH FOOD</h1>
+                                    <p class="typography_text_media_block">Punch Food gaat creatief aan de slag met
+                                        groenten, fruit, noten en zaden. (H)eerlijke, eenvoudige
+                                        gerechten met pure, natuurlijke ingrediënten. Kortom onze keuken draait om alles
+                                        waar wij van
+                                        houden, punch food met smaak! Wij verwelkomen u graag in een ongedwongen sfeer.
+                                        Geniet van onze
+                                        eerlijke, pure gerechten bereid door chef Erwin Desramaults.</p>
+                                    <button class="button_menu">menu</button>
+                                    <button class="button_reservation_1">reservation</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row buttons_iframe">
+                            <div class="col-md-8 col-xs-12">
+                                <iframe width="100%" height="270"
+                                    src="https://jsfiddle.net/astridmattheeuws/bnmjsv0r/4/embedded/html,css/"
+                                    allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                            </div>
+                        </div>
+
+
+                        <div class="row media_blocks">
+                            <div class="col-md-12 col-xs-12 title_molecules_MediaBlocks">
+                                <h1 class="subtitle">media block 3</h1>
+                            </div>
+
+                            <div class="col-lg-12 col-xs-12 my_header_4">
+                                <div class="col-md-12 col-xs-12 my_header_4_A">
+                                    <main class="row my_main">
+                                        <div class="col-md-6 col-xs-12 my_main">
+                                            <div class="row my_aside">
+                                                <div class="col-md-12 col-xs-12 my_aside_1"></div>
+                                            </div>
+                                            <div class="row my_aside">
+                                                <div class="col-6 col-6 my_aside_2"></div>
+                                                <div class="col-6 col-6 my_aside_3"></div>
+                                            </div>
+                                        </div>
+                                    </main>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row buttons_iframe">
+                            <div class="col-md-8 col-xs-12">
+                                <iframe width="100%" height="270"
+                                    src="https://jsfiddle.net/astridmattheeuws/bnmjsv0r/9/embedded/html,css/"
+                                    allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                            </div>
+                        </div>
+
+                        <div class="row media_blocks">
+                            <div class="col-md-12 col-xs-12 title_molecules_MediaBlocks">
+                                <h1 class="subtitle">media block 4</h1>
+                            </div>
+
+                            <div class="col-lg-12 col-xs-12 my_header_4">
+                                <div class="col-md-12 col-xs-12 my_header_4_A">
+                                    <section class="row my_section_gallery">
+                                        <div
+                                            class="col-1 col-1 d-flex align-content-center flex-wrap my_section_gallery_1">
+                                            <div class="social_media">
+                                                <li><a href="#"><i class="fas fa-chevron-left"></i></a></li>
+                                            </div>
+                                        </div>
+                                        <div class="col-10 col-10 my_section_gallery_2"></div>
+                                        <div
+                                            class="col-1 col-1 d-flex align-content-center flex-wrap my_section_gallery_3">
+                                            <div class="social_media">
+                                                <li><a href="#"><i class="fas fa-chevron-right"></i></a></li>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row buttons_iframe">
+                            <div class="col-md-8 col-xs-12">
+                                <iframe width="100%" height="270"
+                                    src="https://jsfiddle.net/astridmattheeuws/bnmjsv0r/8/embedded/html,css/"
+                                    allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                            </div>
+                        </div>
+
+                        <div class="row media_blocks">
+                            <div class="col-md-12 col-xs-12 title_molecules_MediaBlocks">
+                                <h1 class="subtitle">media block 5</h1>
+                            </div>
+
+                            <div class="col-lg-12 col-xs-12 my_header_5">
+                                <div class="col-md-12 col-xs-12 my_header_4_A">
+                                    <div class="col-md-12 col-xs-12 my_section_quotes">
+                                        <p class="p_quote">"Minimalisme qua tafelbekleding.<br>Sympathieke bediening!
+                                            Top! Een echte
+                                            aanrader!"<br><span class="p_quote_name">- Elke (Gent) -</span></p>
+                                        <p class="p_quote">"Eines der Restaurants mit sehr gutem<br>Preis,
+                                            Leistungsverhältnis!"<br><span class="p_quote_name">- Helmit (Berlin)
+                                                -</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row buttons_iframe">
+                            <div class="col-md-8 col-xs-12">
+                                <iframe width="100%" height="300"
+                                    src="https://jsfiddle.net/astridmattheeuws/k8xm7fqe/2/embedded/html,css/"
+                                    allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row grid">
+                    <div class="col-md-12 col-xs-12">
+
+                        <div class="row organisms" id="organisms">
+                            <div class="col-md-12 col-xs-12 header_organisms">
+                                <h1 class="subtitle">organisms</h1>
+                            </div>
+                        </div>
+
+                        <div class="row atoms">
+                            <div class="col-md-12 col-xs-12 title_atoms">
+                                <h1 class="subtitle">grid</h1>
+                            </div>
+                            <p class="bootstrap">GRID SYSTEM: bootstrap-4.3.1</p>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12 title_organisms_header">
+                                <h1 class="subtitle">header</h1>
+                            </div>
+
+                            <div class="col-lg-12 col-xs-12 my_header_molecule_1">
+
+                                <div class="col-md-12 col-xs-12 my_header_molecule_2">
+                                    <nav class="d-flex justify-content-end">
+                                        <ul>
+                                            <li><a id="padding_food" href="#food">foods</a></li>
+                                            <li><a href="#">menu</a></li>
+                                            <li><a href="#">drinks</a></li>
+                                            <li><a href="#">reservation</a></li>
+                                            <li><a href="#">gift card</a></li>
+                                            <li><a href="#">contact</a></li>
+                                            <li><a href="#">nl/fr</a></li>
+                                        </ul>
+                                    </nav>
+
+                                    <div class="d-flex align-items-end flex-column social_media">
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-12"></div>
+                                    <div class="col-lg-6 col-xs-12 my_header_molecule_3">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="assets/images/logo_PunchFood.svg" alt="logo_PunchFood">
+                                        </div>
+                                        <h3 class="header_foodbar">foodbar</h3>
+                                        <h1 class="header_creative">creative / surprising<br><span
+                                                class="rubriek_title_header">foods and drinks</span></h1>
+                                        <div class="d-flex justify-content-center">
+                                            <button class="button_menu_header">reservation</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row buttons_iframe">
+                            <div class="col-md-8 col-xs-12">
+                                <iframe width="100%" height="300" src="https://jsfiddle.net/astridmattheeuws/htx85n2f/8/embedded/html,css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12 title_organisms_footer">
+                                <h1 class="subtitle">quotes</h1>
+                            </div>
+                            <div class="col-lg-12 col-xs-12">
+                                <section class="row my_section_quotes_A">
+
+                                    <div class="col-md-6 col-xs-12 my_section_quotes_1">
+                        
+                                        <p class="p_quote">"Minimalisme qua tafelbekleding.<br>Sympathieke bediening! Top! Een echte
+                                            aanrader!"<br><span class="p_quote_name">- Elke (Gent) -</span></p>
+                                        <p class="p_quote">"Eines der Restaurants mit sehr gutem<br>Preis, Leistungsverhältnis!"<br><span
+                                                class="p_quote_name">- Helmit (Berlin) -</span></p>
+                                    </div>
+                        
+                                    <div class="col-md-6 col-xs-12 my_section_quotes_2">
+                                        <p class="p_quote">"A must-visit for lovers of pure food.<br>Lively, Cosmopolitan Belgian restaurant at
+                                            it’s best"<br><span class="p_quote_name">- Nikki (London) -</span></p>
+                                        <p class="p_quote">"Pure Belgian tradition<br>Don’t miss it when you visit Ghent"<br><span
+                                                class="p_quote_name">- Christian
+                                                (Prague) -</span></p>
+                                    </div>
+                                </section>
+                        
+                                <section class="row align-self-center my-section-quotes_B">
+                        
+                                    <div class="col-md-6 col-xs-12 my_section_quotes_3">
+                                        <p class="p_quote">"Super lekker eten, super vriendelijke bediening.<br>Goes the extra mile for
+                                            the client!"<br><span class="p_quote_name">- Dimitri (Mechelen) -</span></p>
+                                        <p class="p_quote">"Goede atmosfeer, creativiteit op tafel!<br>Pure Belgische traditie"<br><span
+                                                class="p_quote_name">- Jonas (Gentbrugge)
+                                                -</span></p>
+                                        <p class="p_quote">"De passie voor het vak druipt er af!<br>Aperitiefhapjes zijn op niveau!"<br><span class="p_quote_name">- Myfoodspots
+                                                (Gent) -</span></p>
+                        
+                                    </div>
+                        
+                                    <div class="col-md-6 col-xs-12 align-self-center my_section_quotes_4"></div>
+                                </section>
+                            </div>
+                        </div>
+
+                        <div class="row buttons_iframe">
+                            <div class="col-md-8 col-xs-12">
+                                <iframe width="100%" height="300" src="https://jsfiddle.net/astridmattheeuws/htx85n2f/13/embedded/html,css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12 title_organisms_footer">
+                                <h1 class="subtitle">footer</h1>
+                            </div>
+                            <div class="col-lg-12 col-xs-12">
+                                <footer class="row my_footer">
+                                    <div class="col-md-6 col-xs-12 my_footer">
+
+                                        <h1>PUNCH FOOD</h1>
+                                        <ul>
+                                            <li class="contact">Désiré Fiévéstraat 23, 9000 Gent, Belgium</li>
+                                            <li class="contact">DI-VRIJ: 12.00-15.00 & 18.00-22.00<br>ZAT: 16.00-23.00
+                                            </li>
+                                        </ul>
+                                        <div class="d-flex flex-row footer_social_media">
+                                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 col-xs-12 footer_cookies">
+                                        <ul>
+                                            <li><a class="cookie" href="#">algemene voorwaarden</a></li>
+                                            <li><a class="cookie" href="#">cookiebeleid</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-2 col-xs-12 my_footer">
+
+                                        <h1 class="menu">MENU</h1>
+                                        <div class="d-flex align-items-end flex-column">
+                                            <ul class="align_right">
+                                                <li><a href="#">Foods</a></li>
+                                                <li><a href="#">Menu</a></li>
+                                                <li><a href="#">Drinks</a></li>
+                                                <li><a href="#">Reservation</a></li>
+                                                <li><a href="#">Gift Card</a></li>
+                                                <li><a href="#">Contact</a></li>
+                                                <li><a href="#">NL/EN</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+
+                        <div class="row buttons_iframe">
+                            <div class="col-md-8 col-xs-12">
+                                <iframe width="100%" height="300" src="https://jsfiddle.net/astridmattheeuws/htx85n2f/10/embedded/html,css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+        </main>
+
+
+
+
+    </div>
+
 </body>
+
 </html>
